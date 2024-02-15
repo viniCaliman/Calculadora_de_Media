@@ -62,7 +62,7 @@ function refreshTable(){
 function refreshFooter(){
     const media = calculateMedia();
 
-    mediaFinal.innerHTML = media;
+    mediaFinal.innerHTML = media.toFixed(2);
     mediaResultado.innerHTML = media >= notaminima ? spanAprovado : spanReprovado;
 }
 
